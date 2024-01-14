@@ -4,6 +4,7 @@
 	"name": "Azure Functions Core Tools - Python (3.10 - Bullseye)",
     "image": "mcr.microsoft.com/devcontainers/python:3.10-bullseye",
 	"features": {
+        "ghcr.io/devcontainers/features/azure-cli:1": {},
 		"ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
 	},
 	"customizations": {
