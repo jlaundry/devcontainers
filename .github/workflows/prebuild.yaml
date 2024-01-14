@@ -1,4 +1,4 @@
-name: Pre-build Devcontainres
+name: Pre-build Devcontainers
 
 on:
   workflow_dispatch:
