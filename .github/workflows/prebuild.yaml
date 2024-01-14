@@ -1,0 +1,25 @@
+name: Pre-build Devcontainres
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Pre-build Azure Functions Python
+      uses: devcontainers/ci@v0.3
+      with:
+        configFile: ./src/func-python/.devcontainer/devcontainer.json
+        imageName: ghcr.io/jlaundry/devcontainers/func-python
+        cacheFrom: ghcr.io/jlaundry/devcontainers/func-python
+        push: always
