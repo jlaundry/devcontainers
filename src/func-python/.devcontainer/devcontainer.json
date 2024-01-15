@@ -14,7 +14,9 @@
 				"Azurite.azurite"
 			]
 		}
-	}
+	},
+	"onCreateCommand": "python -m venv .venv && source .venv activate && pip install --upgrade pip",
+	"postStartCommand": "source .venv/bin/activate && pip install -r requirements.txt"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
