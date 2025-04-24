@@ -1,8 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
-    "name": "Azure Functions Core Tools - Python (3.11 - Bookworm)",
-    "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+    "name": "Azure Functions Core Tools - Python (3.12 - Bookworm)",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
     "features": {
         "ghcr.io/devcontainers/features/azure-cli:1": {},
         "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {},
