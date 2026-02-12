@@ -4,7 +4,7 @@ A collection of pre-build devcontainer images
 
 ## Usage
 
-Python 3.10 base image with Azure Functions Core Tools:
+Debian 12 (bookworm) Python 3.12 base image with Azure Functions Core Tools:
 
 ```json
 {
