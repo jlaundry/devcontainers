@@ -33,11 +33,3 @@ jobs:
         imageName: ghcr.io/jlaundry/devcontainers/func-python
         cacheFrom: ghcr.io/jlaundry/devcontainers/func-python
         push: always
-
-    - name: Pre-build Azure Functions Python (Bullseye)
-      uses: devcontainers/ci@v0.3
-      with:
-        configFile: ./src/func-python-bullseye/.devcontainer/devcontainer.json
-        imageName: ghcr.io/jlaundry/devcontainers/func-python-bullseye
-        cacheFrom: ghcr.io/jlaundry/devcontainers/func-python-bullseye
-        push: always
